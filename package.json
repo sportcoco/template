@@ -10,7 +10,6 @@
     "component"
   ],
   "files": [
-    "src",
     "dist",
     "yarn.lock"
   ],
