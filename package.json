@@ -1,7 +1,7 @@
 {
   "name": "multi-side-template",
   "version": "1.0.0",
-  "description": "uni-app template repo",
+  "description": "multi-side template repo",
   "main": "meta.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
