@@ -9,6 +9,13 @@
 
 <script>
 	export default {
+		{% if vue3 %}
+		setup() {
+			return {
+					title: 'hello'
+			}
+		},
+		{% else %}
 		data() {
 			return {
 				title: 'Hello'
@@ -20,6 +27,7 @@
 		methods: {
 
 		}
+		{% endif %}
 	}
 </script>
 

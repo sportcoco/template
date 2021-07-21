@@ -1,11 +1,25 @@
-import Vue from 'vue'
-import App from './App'
-
-Vue.config.productionTip = false
-
-App.mpType = 'app'
+import App from './App';
+{% if !vue3 %}
+import Vue from 'vue';
+Vue.config.productionTip = false;
+App.mpType = 'app';
 
 const app = new Vue({
   ...App
-})
-app.$mount()
+});
+{% else %}
+import { createApp } from 'vue';
+
+const app = createApp({
+  ...App
+});
+{% endif %}
+
+app.$mount();
+
+
+
+
+
+
+
