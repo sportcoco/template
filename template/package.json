@@ -81,15 +81,17 @@
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-31920210709003",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    {% if vue3 %}
+    "@vue/compiler-sfc": "^3.0.0",
+    {% else %}
+    "vue-template-compiler": "^2.6.11",
+    {% endif %}
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
-    "postcss-comment": "^2.0.0",
-    {% if !vue3 %}
-    "vue-template-compiler": "^2.6.11"
-    {% endif %}
+    "postcss-comment": "^2.0.0"
   },
   "browserslist": [
     "Android >= 4",
