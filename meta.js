@@ -57,7 +57,7 @@ module.exports = {
     }
   },
   filters: {
-    'lib/*': 'utils !== true'
+    'src/lib/*': 'utils !== true'
   },
   computed: {
     uniUI() {
