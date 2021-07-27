@@ -49,7 +49,15 @@ module.exports = {
         return val.vue3 ? baseUI : baseUI.concat(uViewUI);
       },
       default: []
+    },
+    utils: {
+      type: 'confirm',
+      message: '是否使用工具包（cryptojs/dayjs/lodash）',
+      default: false
     }
+  },
+  filters: {
+    'lib/*': 'utils !== true'
   },
   computed: {
     uniUI() {

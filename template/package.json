@@ -66,6 +66,11 @@
     {% endfor %}
     "colorui": "^1.0.0",
     "core-js": "^3.6.5",
+    {% if utils %}
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.10.6",
+    "lodash": "^4.17.21",
+    {% endif %}
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
     "vue": "{% if vue3 %}^3.1.4{% else %}^2.6.11{% endif %}",
