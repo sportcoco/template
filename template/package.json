@@ -72,9 +72,11 @@
     "lodash": "^4.17.21",
     {% endif %}
     "flyio": "^0.6.2",
-    "regenerator-runtime": "^0.12.1",
     "vue": "{% if vue3 %}^3.1.4{% else %}^2.6.11{% endif %}",
-    "vuex": "{% if vue3 %}^4.0.2{% else %}^3.2.0{% endif %}"
+    {% if useStore %}
+    "vuex": "{% if vue3 %}^4.0.2{% else %}^3.2.0{% endif %}",
+    {% endif %}
+    "regenerator-runtime": "^0.12.1"
   },
   "devDependencies": {
     "@babel/runtime": "~7.12.0",

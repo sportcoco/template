@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .header {
   font-size: 36rpx;
   color: #666;

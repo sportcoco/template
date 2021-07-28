@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .logo {
   height: 200rpx;
   width: 200rpx;

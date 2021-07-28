@@ -14,11 +14,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-$text-color: #2b9939;
+<style lang="scss">
 .text {
   font-size: 40rpx;
-  color: $text-color;
+  color: $uni-color-primary;
   text-align: center;
   padding: 20rpx;
 }
